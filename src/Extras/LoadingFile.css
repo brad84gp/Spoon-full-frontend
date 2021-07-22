@@ -1,0 +1,28 @@
+.loading{
+    position: fixed;
+    width: 235px;
+    height: 235px;
+    background-color: black;
+
+    margin-left: 35%;
+
+    border-radius:15%;
+    border-style:double;
+    border-color: wheat;
+    border-width: 10px;
+
+    animation: loadingAnimation 4s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadingAnimation{
+    50%{transform: scaleY(-100%);}
+}
+
+#loading-img{
+    width: 200px;
+    height: 200px;
+    margin: 2.5%;
+}
+

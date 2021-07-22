@@ -1,0 +1,41 @@
+.user-info-card{
+    margin: 2em 1em;
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+
+.grocery-list-card{
+    background-color: wheat;
+    box-shadow: -5px 5px 5px grey;
+    margin: 2em 1.75em;
+}
+
+#grocery-list-items{
+    list-style: square;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+    margin: 1em;
+}
+
+.recipe-list-card{
+    box-shadow: 5px 5px 5px grey;
+    margin: 2em 1em;
+}
+
+.post-form{
+    margin: 1em .85em;
+    border: 2px grey double;
+    padding: 5%;
+    width: 97%;
+}
+
+#post-form-btn{
+    margin-top: 1em;
+}
+
+.post-card-column{
+    margin: auto;
+    padding: 2%;
+}

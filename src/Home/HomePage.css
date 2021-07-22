@@ -1,0 +1,139 @@
+
+#div-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* TOP LEFT ATTRIBUTE STYLING */
+
+#h1-top-left{
+    position: relative;
+    margin: -20rem auto;
+    font-weight: bolder;
+    background-color: black;
+    color: wheat;
+    width: fit-content;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+}
+
+#h1-top-left:hover{
+    color: black;
+    background-color: wheat;
+}
+
+#recipe{
+    color: wheat;
+    position: absolute;
+    margin: 3rem 7rem;
+}
+
+#h1-top-left:hover #recipe{
+    color: black;
+}
+
+
+/* TOP RIGHT ATTRIBUTE STYLING */
+
+#h1-top-right{
+    position: relative;
+    margin: -20rem auto;
+    font-weight:bolder;
+    background-color: wheat;
+    color: black;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+}
+
+#h1-top-right:hover{
+    background-color: black;
+    color: wheat;
+}
+
+#menu{
+    color: black;
+    position: absolute;
+    margin: 3rem 8rem;
+}
+
+
+#h1-top-right:hover #menu{
+    color: wheat;
+}
+
+
+
+/* BOTTOM LEFT ATTRIBUTE STYLING */
+
+#h1-bottom-left{
+    position: relative;
+    margin: -20rem auto;
+    font-weight:bolder;
+    background-color: wheat;
+    color: black;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+#h1-bottom-left:hover{
+    background-color: black;
+    color: wheat;
+}
+
+#ingredients{
+    color: black;
+    position: absolute;
+    margin: 3rem 6rem;
+}
+
+#h1-bottom-left:hover #ingredients{
+    color: wheat;
+}
+
+
+
+/* BOTTOM RIGHT ATTRIBUTES STYLING */
+
+#h1-bottom-right{
+    position: relative;
+    margin: -20rem auto;
+    font-weight:bolder;
+    background-color: black;
+    color: wheat;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+}
+
+#h1-bottom-right:hover{
+    color: black;
+    background-color: wheat;
+}
+
+#products{
+    color: wheat;
+    position: absolute;
+    margin: 3rem 7rem;
+}
+
+#h1-bottom-right:hover #products{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.slogan{
+    width: 750px;
+    height: 1000px;
+    margin: auto;
+    font-style: oblique;
+    font-size: 70px;
+    text-align: center;
+}

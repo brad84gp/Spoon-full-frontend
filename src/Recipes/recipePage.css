@@ -1,0 +1,118 @@
+
+#recipe-page-img-row{
+    height: 550px;
+}
+
+#recipe-img{
+    height: 500px;
+    width: 100%
+}
+
+.recipe-page-info{
+    position: relative;
+    border: 5px grey double;
+    border-top: none;
+    border-bottom: none;
+    padding: 1%;
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+}
+
+#recipe-img-h1-div{
+    position: relative;
+    margin: -23rem auto;
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    color: wheat;
+}
+
+
+#img-h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+}
+
+#recipe-card-details-div{
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    transform: translate(-15%, -35%);
+}
+
+@media  screen and (min-width: 500px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 6%;
+    }
+}
+
+@media  screen and (min-width: 750px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 17%;
+    }
+}
+
+
+@media  screen and (min-width: 992px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 22%;
+    }
+}
+
+@media  screen and (min-width: 1400px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 24%;
+    }
+}
+
+@media  screen and (min-width: 1550px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 27%;
+    }
+}
+
+@media  screen and (min-width: 1800px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 30%;
+    }
+}
+
+@media  screen and (min-width: 2000px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 32%;
+    }
+}
+
+@media  screen and (min-width: 2200px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 33%;
+    }
+}
+
+@media  screen and (min-width: 2400px){
+    #recipe-card-details-div{
+        position: fixed;
+        top: 25%;
+        left: 35%;
+    }
+}

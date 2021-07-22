@@ -1,0 +1,33 @@
+#products-img{
+    height: 750px;
+    width: 100%;
+    z-index: 3;
+}
+
+.products-page{
+    border: 5px grey double;
+    border-top: none;
+    border-bottom: none;
+    height: 100vh;
+
+    z-index: 1;
+    overflow: scroll;
+}
+
+
+.product-details-list{
+    border: 5px grey double;
+    height: 100vh;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.product-info-table{
+    position: relative;
+    text-align: center;
+    overflow-wrap: none;
+    font-size: medium;
+}
+
+

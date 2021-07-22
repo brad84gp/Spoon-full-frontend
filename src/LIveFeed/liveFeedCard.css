@@ -1,0 +1,16 @@
+.posts-card{
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#posts-card-title{
+    font-size: 25px;
+    text-decoration: underline;
+
+}
+
+#posts-card-text{
+    margin-top: 2%;
+    font-family:'Times New Roman', Times, serif ;
+}

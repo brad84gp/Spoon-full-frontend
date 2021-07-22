@@ -1,0 +1,40 @@
+#ingredients-card-img{
+    height: 500px;
+    width: 100%;
+}
+
+.ingredients-page{
+    border: 5px grey double;
+    border-top: none;
+    border-bottom: none;
+    height: 100vh;
+    z-index: 1;
+    overflow:scroll;
+}
+
+.find-substitutes{
+    border: 5px grey double;
+    border-top: none;
+    border-bottom: none;
+    height: 100vh;
+    z-index: 1;
+    text-align: center;
+}
+
+#ingredient-input{
+    width: 80%;
+    margin: auto;
+}
+
+.checkbox-div{
+    display: block;
+    margin-top: 1em;
+}
+
+#checkbox-input{
+    display: block;
+    float: left;
+    margin-left: 12.7em;
+
+    margin-right: 1%;
+}

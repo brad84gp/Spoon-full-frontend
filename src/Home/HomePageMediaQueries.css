@@ -1,0 +1,128 @@
+@media screen and (min-width: 500px) {
+    
+
+    /* TOP LEFT ATTRIBUTE STYLING */
+
+    #h1-top-left{
+        position: relative;
+        margin: -13rem auto;
+        font-weight: bolder;
+        background-color: black;
+        color: wheat;
+        width: fit-content;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+    /* TOP RIGHT ATTRIBUTE STYLING */
+
+    #h1-top-right{
+        position: relative;
+        margin: -12rem auto;
+        font-weight:bolder;
+        background-color: wheat;
+        color: black;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+
+    /* BOTTOM LEFT ATTRIBUTE STYLING */
+
+    #h1-bottom-left{
+        position: relative;
+        margin: -13rem auto;
+        font-weight:bolder;
+        background-color: wheat;
+        color: black;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* BOTTOM RIGHT ATTRIBUTES STYLING */
+
+    #h1-bottom-right{
+        position: relative;
+        margin: -12rem auto;
+        font-weight:bolder;
+        background-color: black;
+        color: wheat;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .slogan{
+        width: 475px;
+        height: 300px;
+        margin: auto;
+        font-style: oblique;
+        font-size: 70px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+
+    /* TOP LEFT ATTRIBUTE STYLING */
+
+    #h1-top-left{
+        position: relative;
+        margin: -20rem auto;
+        font-weight: bolder;
+        background-color: black;
+        color: wheat;
+        width: fit-content;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+    /* TOP RIGHT ATTRIBUTE STYLING */
+
+    #h1-top-right{
+        position: relative;
+        margin: -20rem auto;
+        font-weight:bolder;
+        background-color: wheat;
+        color: black;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+
+    /* BOTTOM LEFT ATTRIBUTE STYLING */
+
+    #h1-bottom-left{
+        position: relative;
+        margin: -20rem auto;
+        font-weight:bolder;
+        background-color: wheat;
+        color: black;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* BOTTOM RIGHT ATTRIBUTES STYLING */
+
+    #h1-bottom-right{
+        position: relative;
+        margin: -20rem auto;
+        font-weight:bolder;
+        background-color: black;
+        color: wheat;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+    }
+
+}
+

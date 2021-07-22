@@ -1,0 +1,13 @@
+#menu-img{
+    height: 500px;
+    width: 100%;
+}
+
+.menu-page{
+    border: 5px grey double;
+    border-top: none;
+    border-bottom: none;
+    height: 100vh;
+    margin-top: 2%;
+    z-index: 1;
+}

@@ -1,0 +1,34 @@
+.product-card{
+    display : inline-block;
+    margin: 2em 7em;
+    text-align: center;
+    height: max-content;
+    width: 275px;
+}
+
+.product-card-group{
+    height: 600px;
+}
+
+
+#product-card-img{
+    position: relative;
+    margin: 2em 10%;
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+#product-card-title{
+    display: flex;
+    text-align: center;
+    margin: 2.5em;
+}
+
+#product-card-btn{
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+
+}

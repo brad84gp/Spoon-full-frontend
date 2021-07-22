@@ -1,0 +1,14 @@
+.login-form-info{
+    border: 5px lightgrey solid;
+    padding: 2%;
+    width: 100%;
+}
+
+#form-title{
+    margin: 2em auto;
+    text-align: center;
+}
+
+#formgroup{
+    margin: 2em;
+}

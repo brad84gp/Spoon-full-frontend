@@ -1,0 +1,82 @@
+.card-details{
+    position: fixed;
+    width: 750px;
+    height: 600px;
+    background-color: wheat;
+    text-align: justify;
+    animation: flipCard 3s normal;
+    animation-iteration-count: inherit;
+
+}
+
+#title-cuisine{
+    width: 425px;
+    height: 300px;
+    position: absolute;
+    top: 18%;
+    right: 2%;
+}
+
+#cuisine-ul{
+    position: absolute;
+    top: 80%;
+}
+
+#card-details-img{
+    width: 250px;
+    height: 250px;
+    margin: 7em 2em;
+}
+
+
+#card-details-title{
+    position: absolute;
+    font-size: 23px;
+    top: 30%;
+    left: 0%;
+    right: 0%;
+}
+
+#card-details-cuisines{
+    position: absolute;
+    font-size: large;
+    top: 70%;
+}
+
+
+#card-details-pairedWineText{
+    font-size: large;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    margin: 2%;
+    text-align: center;
+}
+
+#wine-ul li{
+    width: max-content;
+    margin-left: 2.5em;
+}
+
+#wine-ul{
+    width: max-content;
+    display: flex;
+}
+
+#wine-p{
+    text-align: center;
+    margin: 3em;
+}
+
+#details-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#exit-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
