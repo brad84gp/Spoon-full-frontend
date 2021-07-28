@@ -57,10 +57,12 @@ const RecipePage = () => {
 
                 <Col sm={12} lg={8} xl={10}>
                     <div className="recipe-page-info">
-                        <InputGroup id="recipe-input">
-                            <Input className="query-input" type="text" placeholder="ex. Italian"/>
-                            <InputGroupAddon  addonType="append"><Button color="success" onClick={searchRecipes} style={{zIndex : '1'}}>Search Recipes</Button></InputGroupAddon>
-                        </InputGroup>
+                        <form onSubmit={searchRecipes}>
+                            <InputGroup id="recipe-input">
+                                <Input className="query-input" type="text" placeholder="ex. Italian"/>
+                                <InputGroupAddon  addonType="append"><Button type="submit" color="success"  style={{zIndex : '1'}}>Search Recipes</Button></InputGroupAddon>
+                            </InputGroup>
+                        </form>
                         <br></br>
                         <RecipeContext.Provider value={{setRecipeDetails, recipeDetails}}>
                             {recipeData.length 

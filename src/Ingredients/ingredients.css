@@ -10,6 +10,7 @@
     height: 100vh;
     z-index: 1;
     overflow:scroll;
+    margin-top: 3%;
 }
 
 .find-substitutes{
@@ -19,6 +20,7 @@
     height: 100vh;
     z-index: 1;
     text-align: center;
+    margin-top: 3%;
 }
 
 #ingredient-input{
@@ -37,4 +39,14 @@
     margin-left: 12.7em;
 
     margin-right: 1%;
+}
+
+#ingredient-img-h1-div{
+    position: relative;
+    margin: -23rem auto;
+    background-color: black;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    color: wheat;
 }

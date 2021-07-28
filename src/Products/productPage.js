@@ -21,7 +21,8 @@ const ProductPage = () => {
 
     const [noValueFound, setNoValueFound] = useState(true)
 
-    async function searchProducts(){
+    async function searchProducts(evt){
+        evt.preventDefault()
         try{
             if(!noValueFound) setNoValueFound(true)
             const queryTag = document.querySelector('.query-input').value
@@ -46,6 +47,9 @@ const ProductPage = () => {
                         <Col sm={12}>
                             <div>
                                 <img id="products-img" src={productImage} alt="" />
+                                <div id="product-img-h1-div">
+                                    <h1 id="img-h1">LET US HELP YOU FIND THE RIGHT PRODUCTS FOR YOUR GROCERY LIST!</h1>
+                                </div>
                             </div>
                         </Col>
                     </Row>
@@ -54,10 +58,12 @@ const ProductPage = () => {
 
                         <Col md={6}>
                             <div className="products-page">
-                                <InputGroup id="product-input">
-                                    <Input className="query-input" type="text" placeholder="ex. Italian"/>
-                                    <InputGroupAddon  addonType="append"><Button color="success" onClick={searchProducts}>Search Products</Button></InputGroupAddon>
-                                </InputGroup>
+                                <form onSubmit={searchProducts}>
+                                    <InputGroup id="product-input">
+                                        <Input className="query-input" type="text" placeholder="ex. Italian"/>
+                                        <InputGroupAddon  addonType="append"><Button color="success">Search Products</Button></InputGroupAddon>
+                                    </InputGroup>
+                                </form>
                                 <br></br>
                                 {noValueFound ? null : <h2 style={{textAlign : 'center', marginTop : '.5em'}}>No results were found, please try again!</h2>}
                                 {products ? (
@@ -79,49 +85,53 @@ const ProductPage = () => {
 
                         <Col md={6}>
                             <div className="product-details-list">
-                                <h1 style={{textAlign : 'center', marginTop : '.5em'}}>Product Details</h1>
-                                {productDetails ? 
-                                    <div className="product-info-table">
-                                        <Table bordered hover>
-                                            <thead>
-                                                <tr>
-                                                    <th>Category</th>
-                                                    <th>Details</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">Price</th>
-                                                    <td>{productDetails.price}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Aisle</th>
-                                                    <td>{productDetails.aisle}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Badges</th>
-                                                    <td>{productDetails.importantBadges}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Ingredients</th>
-                                                    <td>{productDetails.ingredientList}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Servings</th>
-                                                    <td>
-                                                        <li>Servings: {productDetails.servings.number}</li>
-                                                        <li>Size: {productDetails.servings.size}</li>
-                                                        <li>Units: {productDetails.servings.unit}</li>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Description</th>
-                                                    <td>{productDetails.description}</td>
-                                                </tr>
-                                            </tbody>
-                                        </Table> 
-                                    </div>
-                                : null }
+                                <Row>
+                                    <Col xs={12}>
+                                        <h1 style={{textAlign : 'center', marginTop : '.5em'}}>Product Details</h1>
+                                        {productDetails ? 
+                                            <div className="product-info-table">
+                                                <Table striped bordered hover responsive >
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Category</th>
+                                                            <th>Details</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Price</th>
+                                                            <td>{productDetails.price}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Aisle</th>
+                                                            <td>{productDetails.aisle}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Badges</th>
+                                                            <td>{productDetails.importantBadges}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Ingredients</th>
+                                                            <td>{productDetails.ingredientList}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Servings</th>
+                                                            <td>
+                                                                <li>Servings: {productDetails.servings.number}</li>
+                                                                <li>Size: {productDetails.servings.size}</li>
+                                                                <li>Units: {productDetails.servings.unit}</li>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Description</th>
+                                                            <td>{productDetails.description}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </Table> 
+                                            </div>
+                                        : null }                                          
+                                    </Col>
+                                </Row>
                             </div>
                         </Col>
                     </Row>

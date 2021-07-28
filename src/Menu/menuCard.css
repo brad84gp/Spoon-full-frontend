@@ -1,6 +1,6 @@
 .menu-card{
     width: 250px;
-    height: 350px;
+    height: 450px;
     margin: 4em auto;
 }
 
@@ -17,7 +17,7 @@
 #menu-card-img{
     width: 200px;
     height: 250px;
-    margin: 1.5em;
+    margin: .5em auto;
 }
 
 .menu-card-table-div{
@@ -29,4 +29,14 @@
     width: 75%;
     text-align: center;
     margin: 1em 2.5em;
+}
+
+#menu-img-h1-div{
+    position: relative;
+    margin: -23rem auto;
+    background-color: black;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    color: wheat;
 }

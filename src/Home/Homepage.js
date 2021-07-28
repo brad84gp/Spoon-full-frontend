@@ -21,35 +21,43 @@ const HomePage = () => {
                 <Col md={2} lg={1}></Col>
                 
 
-                <Col sm={12} md={8} lg={10}>
+                <Col xs={12} md={8} lg={10}>
 
                     <Row style={{height : '500px'}}>
-                        <Col sm={12} lg={6}>
-                            <img id="div-img" src={recipe} alt=""/>
-                            <div id="h1-top-left">
-                                <a href="/recipes"><h1 id="recipe">Recipes</h1></a>
-                            </div>
+                        <Col xs={12} lg={6}>
+                            <a href="/recipes">
+                                <img id="div-img" src={recipe} alt=""/>
+                                <div id="h1-top-left">
+                                    <h1 id="recipe">Recipes</h1>
+                                </div>
+                            </a>
                         </Col>
-                        <Col sm={12} lg={6}>
-                            <img id="div-img"  src={menu} alt=""/>
-                            <div id="h1-top-right">
-                                <a href="/Menu"><h1 id="menu" >Menu</h1></a>
-                            </div>
+                        <Col xs={12} lg={6}>
+                            <a href="/Menu">
+                                <img id="div-img"  src={menu} alt=""/>
+                                <div id="h1-top-right">
+                                    <h1 id="menu" >Menu</h1>
+                                </div>
+                            </a>
                         </Col>
                     </Row>
 
                     <Row style={{height : '500px'}}>
-                        <Col sm={12} lg={6}>
-                            <img id="div-img"  src={ingredients} alt="" />
-                            <div id="h1-bottom-left">
-                                <a href="/Ingredients"><h1 id="ingredients" >Ingredients</h1></a>
-                            </div>
+                        <Col xs={12} lg={6}>
+                            <a href="/Ingredients">
+                                <img id="div-img"  src={ingredients} alt="" />
+                                <div id="h1-bottom-left">
+                                    <h1 id="ingredients" >Ingredients</h1>
+                                </div>
+                            </a>
                         </Col>
-                        <Col sm={12} lg={6}>
-                            <img id="div-img"  src={products} alt=""/>
-                            <div id="h1-bottom-right">
-                                <a href="/Products"><h1 id="products">Products</h1></a>
-                            </div>
+                        <Col xs={12} lg={6}>
+                            <a href="/Products">
+                                <img id="div-img"  src={products} alt=""/>
+                                <div id="h1-bottom-right">
+                                    <h1 id="products">Products</h1>
+                                </div>
+                            </a>
                         </Col>
                     </Row>
 

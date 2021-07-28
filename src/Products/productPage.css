@@ -1,5 +1,5 @@
 #products-img{
-    height: 750px;
+    height: 550px;
     width: 100%;
     z-index: 3;
 }
@@ -12,6 +12,7 @@
 
     z-index: 1;
     overflow: scroll;
+    margin-top: 33em;
 }
 
 
@@ -19,15 +20,34 @@
     border: 5px grey double;
     height: 100vh;
     width: 100%;
-
     z-index: 1;
+    margin-top: 5em;
 }
 
 .product-info-table{
-    position: relative;
     text-align: center;
-    overflow-wrap: none;
+    overflow-wrap: break-word;
     font-size: medium;
+    width: 100%;
 }
 
 
+#product-img-h1-div{
+    position: relative;
+    margin: -23rem auto;
+    background-color: black;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    color: wheat;
+}
+
+@media screen and (min-width: 768px){
+    .product-details-list{
+        border: 5px grey double;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        margin-top: 33em;
+    }
+}

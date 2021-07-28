@@ -60,7 +60,9 @@ const RecipeCard = ({id, title, image, sourceUrl}) => {
                 <CardBody>
                     <CardTitle tag="h5"><b>Title: </b>{card.title}</CardTitle>
                     <Button id="card-btn" color="primary" onClick={getDetails}>Details</Button>
-                    <Button id="favorite-recipe" color="success" onClick={addRecipe} style={{marginLeft : '2%'}}>Favorite Recipe!</Button>
+                    {userValue ? 
+                            <Button id="favorite-recipe" color="success" onClick={addRecipe} style={{marginLeft : '2%'}}>Favorite Recipe!</Button>
+                     : null }
                 </CardBody>
             </Card>
         </Col>

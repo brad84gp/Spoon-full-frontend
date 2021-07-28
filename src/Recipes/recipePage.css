@@ -1,8 +1,4 @@
 
-#recipe-page-img-row{
-    height: 550px;
-}
-
 #recipe-img{
     height: 500px;
     width: 100%
@@ -15,6 +11,7 @@
     border-bottom: none;
     padding: 1%;
     width: 100%;
+    margin-top: 32em;
     height: max-content;
     z-index: 1;
 }
@@ -23,7 +20,8 @@
     position: relative;
     margin: -23rem auto;
     background-color: black;
-    width: 300px;
+    text-align: center;
+    width: 500px;
     height: 200px;
     color: wheat;
 }

@@ -14,7 +14,7 @@ const ApiRoutes = require('../API/API-info')
 const IngredientPage = () => {
 
     const [ingredientsList, setIngredientsList] = useState({
-        message : '',
+        message : false,
         data : []
     })
 
@@ -23,13 +23,14 @@ const IngredientPage = () => {
         data : ''
     })
 
-    async function searchRecipes(){
+    async function searchRecipes(evt){
+        evt.preventDefault()
         try{
             let queryTag = document.querySelector('.query-input').value
             let response = await axios.get(`${ApiRoutes.ingredientSearch}${queryTag}`)
-            console.log(response)
+            if(response.data.results.length == 0) return setIngredientsList({ message : true, data : []})
             setIngredientsList({
-                message : 'No results were found for your search, Please try again',
+                message : false,
                 data : response.data.results
             })
         }catch{
@@ -37,7 +38,8 @@ const IngredientPage = () => {
         }
     }
 
-    async function findSubstitue(){
+    async function findSubstitue(evt){
+        evt.preventDefault()
         try{
             let queryTag = document.querySelector('.query-sub-input').value
             let response = await axios.get(`${ApiRoutes.ingredientSubstitute}${queryTag}`)
@@ -72,6 +74,9 @@ const IngredientPage = () => {
                         <Col sm={12}>
                             <di>
                                 <img id="ingredients-card-img" src={ingredientsPicture} alt="" />
+                                <div id="ingredient-img-h1-div">
+                                    <h1 id="img-h1">NOT SURE WHAT INGREDIENTS TO ADD? LET US HELP YOU DECIDE!</h1>
+                                </div>
                             </di>
                         </Col>
                     </Row>
@@ -80,12 +85,14 @@ const IngredientPage = () => {
                         <Col sm={6} >
                             
                             <div className='ingredients-page'>
-                                <InputGroup id="ingredient-input">
-                                    <Input className="query-input" type="text" placeholder="ex. Italian"/>
-                                    <InputGroupAddon  addonType="append"><Button color="success" onClick={searchRecipes}>Search Ingredients</Button></InputGroupAddon>
-                                </InputGroup>
+                                <form onSubmit={searchRecipes}>
+                                    <InputGroup id="ingredient-input">
+                                        <Input className="query-input" type="text" placeholder="ex. Italian"/>
+                                        <InputGroupAddon  addonType="append"><Button color="success">Search Ingredients</Button></InputGroupAddon>
+                                    </InputGroup>
+                                </form>
                                 <br></br>
-                                <h3 style={{textAlign : 'center'}}>{ingredientsList.message}</h3>
+                                {ingredientsList.message ? <h3 style={{textAlign : 'center'}}>No results were found, please try a different search!</h3> : null}
                                 {ingredientsList ? (
                                     <Row>
                                         {ingredientsList.data.map(el => (
@@ -103,10 +110,12 @@ const IngredientPage = () => {
                         
                         <Col sm={6} >
                             <div className='find-substitutes'>
-                                <InputGroup id="ingredient-input">
-                                        <Input className="query-sub-input" type="text" placeholder="ex. butter"/>
-                                    <InputGroupAddon  addonType="append"><Button color="success" onClick={findSubstitue}>Find Substitute</Button></InputGroupAddon>
-                                </InputGroup>
+                                <form onSubmit={findSubstitue}>
+                                    <InputGroup id="ingredient-input">
+                                            <Input className="query-sub-input" type="text" placeholder="ex. butter"/>
+                                        <InputGroupAddon  addonType="append"><Button color="success" >Find Substitute</Button></InputGroupAddon>
+                                    </InputGroup>
+                                </form>
                                 <br></br>
                                 <h3>{substitutes.message}</h3>
                                 {substitutes.data ? (
